@@ -1,0 +1,91 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Milonga&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Milonga&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
+
+html {
+   font-size: 16px; /* default  */
+   /* font-size: 18px; */
+   font-family: "Nunito Sans", Arial, sans-serif;
+   line-height: 1.2rem; /* Est censé être 50% (1.5rem) en plus de la hauteur de typo */
+   /* Joue sur les espaces pour aligner le texte à droite et à gauche. */
+   
+}
+
+h1 {
+   /* 2 fois la taille de l’élément racine (html) */
+   color: #e92476e3;
+   font-size: 2rem;
+   font-family: "Milonga";
+   text-align: center;
+   text-transform: capitalize;
+}
+
+h2 {
+   /* 2 fois la taille de l’élément racine (html) */
+   color: #e92476e3;
+   font-size: 1.3rem;
+   font-family: "Milonga";
+   text-align: center;
+}
+
+p, div { 
+   text-indent: 1.3rem; /* so twice the height of our root text size */
+   text-align: justify; 
+}
+
+p.img-start {
+   display: flow-root;
+}
+
+footer {
+   /* 2 fois la taille de l’élément racine (html) */
+   font-size: .8rem;
+   font-style: italic;
+}
+
+.play-with-div {
+   width: 24%;
+   /* NB : The width is only based on the content. It does not take into account padding,
+   border or margin. */
+
+   /* display: block; */
+   /* NB : default behavior, in the snense that a div takes full width available on the page */
+
+   display: inline-block;
+   /* NB : Most used. Does not take the full width if it is not needed. */
+
+   /* display: inline; */
+   /* NB : width ou height ne sont plus valides si on est en inline. span est un élément inline */
+
+   /* display: none; */
+   /* NB : actually make element collapse and disappear  */
+   
+   /* visibility: hidden;  */
+   /* NB : element occupies same space and is invisible ! */
+   visibility: visible; 
+   /* visibility: collapse;  this property only works for row element, row group, column, column group */
+   border: 1px solid black;
+
+   padding-left : 10px;
+   padding-right : .6rem;
+
+   margin-top : .2rem;
+   /* margin : .2rem .2rem .2rem 0  ; */
+   /* margins adds up in between components, so in order to compensate that, 
+   we can use specific for : top, right, bottom, left, with a value for left, none for right
+   but it is bad visualisation and error prone … */
+   border-style: ridge;
+   border-color: #370bd530;
+   border-width: .3rem;
+}
+
+.notabene {
+   text-decoration-line: underline;
+   text-decoration-color: #e03e82e3;
+}
+
+#chachi-img{
+   width:100px;
+   float:right;
+}
+
+/* Position of styles  matter if we are overriding elements twice */
